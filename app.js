@@ -1,10 +1,29 @@
-const heading = React.createElement(
-    "h1",
-    {id : "myheading"}, 
-    "Hello from React!!!")
+// Nested HTML --
+// <div id="parent">
+//     <div id="child1">
+//         <h1>Hello h1</h1>
+//         <h2>Welcome back!!</h2>
+//     </div>
+//     <div id="child2">
+//         <h1>Hello h1</h1>
+//         <h2>Welcome back!!</h2>
+//     </div>
+// </div>
 
-console.log(heading);//react Element => js obj
+
+const parent = React.createElement("div", {id:"parent"}, 
+        [React.createElement("div", {id:"child1"}, 
+        [React.createElement("h1", {}, "Hello h1"),
+        React.createElement("h2", {}, "Welcome back!!")]),
+
+        React.createElement("div", {id:"child2"}, 
+        [React.createElement("h1", {}, "Hello h1"),
+        React.createElement("h2", {}, "Welcome back!!"),]),
+    ])
+
+
+console.log(parent);//react Element => js obj
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
-root.render(heading)//convert obj into html tag
+root.render(parent)//convert obj into html tag
