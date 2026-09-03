@@ -2,10 +2,7 @@
   "name": "react-byneha",
   "version": "1.0.0",
   "description": "Everything about React by Neha Shirsath.",
-  "keywords": [
-    "react",
-    "neha"
-  ],
+  "keywords": [],
   "homepage": "https://github.com/Neha-Shirsath/react-projects#readme",
   "bugs": {
     "url": "https://github.com/Neha-Shirsath/react-projects/issues"
@@ -17,11 +14,17 @@
   "license": "ISC",
   "author": "Neha Shirsath",
   "type": "commonjs",
-  "main": "app.js",
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
     "parcel": "^2.16.4"
-  }
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
 }
