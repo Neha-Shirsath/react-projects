@@ -1,30 +1,19 @@
-// Nested HTML --
-// <div id="parent">
-//     <div id="child1">
-//         <h1>Hello h1</h1>
-//         <h2>Welcome back!!</h2>
-//     </div>
-//     <div id="child2">
-//         <h1>Hello h1</h1>
-//         <h2>Welcome back!!</h2>
-//     </div>
-// </div>
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", {id:"parent"}, 
-        [React.createElement("div", {id:"child1"}, 
-        [React.createElement("h1", {}, "Hello h1, I m using Parcel🚀"),
-        React.createElement("h2", {}, "Welcome back!!")]),
+//React.createElement => React element => JS object =>render => HTML element
+const heading  = React.createElement("h1", {id: "h1 tag"}, "Welcome, I m using React💕")
 
-        React.createElement("div", {id:"child2"}, 
-        [React.createElement("h1", {}, "Hello h1"),
-        React.createElement("h2", {}, "Welcome back!!"),]),
-    ])
-
-
-console.log(parent);//react Element => js obj
+console.log(heading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
-root.render(parent)//convert obj into html tag
+//JSX => It is not HTML => JSX is HTML like Syntax
+//JSX => compiled/transpiled by BABEL(managed by PARCEL) => React.createElement => Js obj => render => HTMLelemt
+const jsxHeading = <h1>"Hello from JSX😎"</h1>
+
+console.log(jsxHeading);
+
+root.render(heading)
+root.render(jsxHeading)//creates HTML element
+
