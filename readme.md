@@ -31,7 +31,19 @@
 - BABEL is managed by PARCEL
 - JSX code => React.createElement(Js obj) => render => HTML elemet
 - beconmes exact like core react element but more devloper friendly
+- for attribute use "Camel Casing"
+- use parenthesis for multiple lines
 
 ### Babel
 - It is packege known as JavaScript compiler or Transpiler
 - That converts JS code so that JS engine, react, browser can understand it
+
+## React components
+- everything in React is componenet
+- 2 types : 1️⃣Class-based Component(older)
+            2️⃣Functional component(newer)
+
+### React Functional Component
+- first letter should be in Capital
+- it is javaScript function That returns JSX code or react element
+- to render these react components => root.render(<.../>) thats how BABEL understands it as component
