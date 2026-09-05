@@ -19,6 +19,7 @@ const Heading  = () => {
 //functional component
 const FuncComponent = () => (
     <div id="container">
+        {100+200}
         <Heading/>
         <h3 className="heading2">This is React Functional Component</h3>
     </div>

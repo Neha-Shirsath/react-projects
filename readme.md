@@ -33,6 +33,7 @@
 - beconmes exact like core react element but more devloper friendly
 - for attribute use "Camel Casing"
 - use parenthesis for multiple lines
+- for adding js in jsx use "{}"
 
 ### Babel
 - It is packege known as JavaScript compiler or Transpiler
@@ -47,3 +48,7 @@
 - first letter should be in Capital
 - it is javaScript function That returns JSX code or react element
 - to render these react components => root.render(<.../>) thats how BABEL understands it as component
+- to acces another react elemet, functionl componenet to another use:
+  *{Title()}
+  *<Title/>
+  *<Title></Title>
