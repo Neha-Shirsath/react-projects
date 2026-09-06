@@ -1,32 +1,69 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//React Element
-const heading1  = React.createElement(
-    "h1", 
-    {id: "h1 tag"}, 
-    "Welcome, I m using React💕"
-)
+//Header
+//-logo
+//-items(Home,About us, cart)
+//Body
+//-search
+//-rest cards(img, restName,cuisine, price,time)
+//Footer
+//-contact
+//-links
 
-//JSX
-const jsxHeading = (<h2 className="head">"Hello from JSX😎"</h2>);
+const Appheader = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src="https://img.freepik.com/premium-vector/burger-vector-illustration-flat-hamburger-icon-logo-design_1058532-20232.jpg" alt="burger" />
+                <h3 className="name">CraveLy</h3>
+            </div>
+            <div className="items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li className="cart-logo">🛒Cart</li>
+                </ul>
+            </div>
+        </div>
+    );
+};
 
-
-const Heading  = () => { 
-    return <h2 id="heading1" >Welcome, I m using React💕</h2>
+const ResCard = () => {
+    return (
+        <div className="res-card">
+            <h3>Rajmata Foods</h3>
+        </div>
+    )
 }
 
-//functional component
-const FuncComponent = () => (
-    <div id="container">
-        {100+200}
-        <Heading/>
-        <h3 className="heading2">This is React Functional Component</h3>
-    </div>
-);
 
+const Appbody = () => {
+    return (
+        <div className="app-body">
+            <div className="search-container"> <input className="search" type="text" placeholder="Search" /></div>
+            <div className="res-container">
+                <ResCard/>
+            </div>
+        </div>
+    )
+}
+
+// const Appfooter = () => {
+//     return ()
+// }
+
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Appheader/>
+            <Appbody/>
+        </div>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 // root.render(jsxHeading)
-root.render(<FuncComponent/>)
+root.render(<AppLayout/>)
