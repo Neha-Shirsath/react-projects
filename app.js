@@ -30,14 +30,15 @@ const Appheader = () => {
     );
 };
 
-const ResCard = () => {
+const ResCard = (props) => {
+    const {resImage,resName, ratingNtime, cuisine, location} = props
     return (
         <div className="res-card">
-            <img className="dosa-cafe" alt="dosa" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/2/2d2d3946-5d25-4f6f-9d50-0b9f31425454_445353.jpg"/>
-            <h3>SA Dosa Cafe</h3>
-            <h4>⭐4.2 .  25-30 mins</h4>
-            <p>South Indian, Snacks, Behaverages...</p>
-            <p>Kothrud</p>
+            <img className="dosa-cafe" alt="cuisine" src={resImage}/>
+            <h3>{resName}</h3>
+            <h4>{ratingNtime}</h4>
+            <p>{cuisine}</p>
+            <p>{location}</p>
         </div>
     )
 }
@@ -49,9 +50,21 @@ const Appbody = () => {
             <div className="search-container"> <input className="search" type="text" placeholder="Search" /></div>
             <div className="res-container">
                 <div className="card-container1">
-                    <ResCard/>
-                    <ResCard/>
-                    <ResCard/>
+                    <ResCard resImage="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/2/2d2d3946-5d25-4f6f-9d50-0b9f31425454_445353.jpg"
+                            resName="SA Dosa Cafe" 
+                            ratingNtime="⭐4.2 .  25-30 mins" 
+                            cuisine="South Indian, Snacks, Behaverages"
+                            location="Kothrud"/>
+                    <ResCard resImage = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/jiiy0xlkxs9zmt8nqbbp"
+                            resName="Le Plaisir" 
+                            ratingNtime="⭐4.6 .  30-40 mins"
+                            cuisine="European"
+                            location="Kothrud"/>
+                    <ResCard resImage = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/9/29/10f70927-6a89-4ecc-9504-d8547af1cbd1_21895%20(1).jpg"
+                            resName="Abhishek Veg Restaurant" 
+                            ratingNtime="⭐4.5 .  40-50 mins"
+                            cuisine="Biryani, North Indian, South Indian"
+                            location="Erandwane"/>
                     <ResCard/>
                 </div>
                 <div className="card-container2">

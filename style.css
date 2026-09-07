@@ -7,13 +7,14 @@
 
 .logo-container{
     position: relative;
-    width: 100px;
+    width: 80px;
 }
 
 .logo{
     width: 100%;
     background-color: #f9f1e8;
     display: block;
+    padding-bottom: 5px;
 }
 
 .items > ul{
@@ -33,7 +34,7 @@
 
 .logo-container > .name{
     position: absolute;
-    top: 55%;
+    top: 47%;
     left: 16%;
     /* transform: translate(-50%, -50%); */
     color: brown;
@@ -74,12 +75,13 @@
     padding: 8px;
     padding-bottom: 0;
     margin: 5px;
+    margin-bottom: 15px;
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
 .dosa-cafe{
     width: 100%;
-    height: 56%;
+    height: 68%;
     border-radius: 10px;
     padding-bottom: 0%;
     margin-bottom: 0;

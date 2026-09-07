@@ -34,6 +34,7 @@
 - for attribute use "Camel Casing"
 - use parenthesis for multiple lines
 - for adding js in jsx use "{}"
+- for adding inline css write in js obj {}
 
 ### Babel
 - It is packege known as JavaScript compiler or Transpiler
@@ -52,3 +53,8 @@
   *{Title()}
   *<Title/>
   *<Title></Title>
+
+## React Props(properties)
+- to dynamically pass a data to component pass it as a props
+- props are just passing arguments to a function
+- always build "config driven UI"
