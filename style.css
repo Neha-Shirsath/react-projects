@@ -43,11 +43,12 @@
 }
 
 .app-body{
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 100%;
     height: 100vh;
     padding-top: 8px;
     margin-top: 5px;
+
 }
 
 .search{
@@ -63,4 +64,57 @@
     border-radius: 10px;
     color: #494747;
     border: none;
+    margin-bottom: 30px;
+    margin-left: 56px;
+}
+
+.res-card{
+    width: 19vw;
+    height: 36vh;
+    padding: 8px;
+    padding-bottom: 0;
+    margin: 5px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.dosa-cafe{
+    width: 100%;
+    height: 56%;
+    border-radius: 10px;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+}
+
+.res-card > h3{
+    font-weight: 750;
+    font-size: 20px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin: 0%;
+    padding-left: 6px;
+}
+
+.res-card > h4{
+    display: flex;
+    margin: 1px;
+    padding-left: 2px;
+}
+
+.res-card > p{
+    display: flex;
+    margin: 2px;
+    padding-left: 6px;
+    color: #5b5858;
+}
+
+.card-container1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0%;
+    justify-content: space-evenly;
+}
+.card-container2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0%;
+    justify-content: space-evenly;
 }
