@@ -82,6 +82,7 @@
 
 .res-card:hover{
     box-shadow: 5px 5px 10px #8e8a8a;
+    cursor: pointer;
 }
 
 .dosa-cafe{
@@ -118,4 +119,31 @@
     flex-wrap: wrap;
     margin-bottom: 0%;
     justify-content: space-evenly;
+}
+
+
+.searching{
+    display: flex;
+    gap: 30px;
+}
+
+.filter{
+    margin-top: 3.5px;
+}
+
+.filter > .top-res{
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid rgb(134, 132, 132);
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
+    font-weight: 500;
+}
+
+.top-res:hover{
+    background-color: #f9f1e8;
+}
+
+.top-res:active{
+    box-shadow: 3px 3px 6px #b7b5b5;
 }
