@@ -31,6 +31,7 @@
     color: #5d1313;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
     font-weight: 600;
+    cursor:pointer;
 }
 
 .logo-container > .name{
@@ -63,7 +64,7 @@
     font-family: 'Verdana', sans-serif;
     width: 60vh; 
     background-color: #f0f0f0;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px ;
     color: #494747;
     border: none;
     margin-bottom: 30px;
@@ -209,7 +210,7 @@
     display:flex;
     align-items: center;
     font-family: 'Verdana', sans-serif;
-    width: 60vh; 
+    width: 70vh; 
     background-color: #f0f0f0;
     border-radius: 10px;
     color: #494747;
@@ -236,4 +237,21 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
     font-weight: 600;
     background-color: transparent;
+    cursor:pointer;
+}
+
+.search-btn{
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    background-color: #d6d2d2;
+    border-radius: 0px 10px 10px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
+    font-weight: 500;
+    color: #2c2b2b;
+}
+
+.search-container{
+    display: flex;
 }
