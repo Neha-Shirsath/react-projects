@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-right: 50px;
+    align-items: center;
     font-size: 18px;
     color: #5d1313;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
@@ -223,4 +224,16 @@
     height: 32px;
     width: 120px;
     border-radius: 10px;
+}
+
+.login-btn{
+    padding: 10px;
+    border: none;
+    text-align: center;
+    /* margin-bottom: 10px; */
+    font-size: 18px;
+    color: #5d1313;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
+    font-weight: 600;
+    background-color: transparent;
 }
