@@ -58,3 +58,13 @@
 - to dynamically pass a data to component pass it as a props
 - props are just passing arguments to a function
 - always build "config driven UI"
+
+## 2 types of export and import
+  1️⃣Default import and export
+  2️⃣Named import and export - multiple export => {---} for import
+
+## Hooks
+  1️⃣useState() 
+     keeps ui and data in sink
+  2️⃣useEffect(() => {},[])
+     renders after component renders
