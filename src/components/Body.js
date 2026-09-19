@@ -21,7 +21,7 @@ const Appbody = () => {
     const json = await data.json();
     console.log(json);
     
-    const restaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
     setListOfRes(restaurants)
     setFilteredListOfRes(restaurants)
     
@@ -34,7 +34,6 @@ const Appbody = () => {
                     {/* <img src= {SEARCH_ICON} /> */}
                     <input className="search" id="search" type="text" value={searchText} onChange={(e) => {
                         setSearchText(e.target.value)
-                        setListOfRes(listOfRes)
                     }}
                     placeholder="Search for restaurant, cuisine or a dish"
                     />
@@ -50,7 +49,7 @@ const Appbody = () => {
             <div className="filter">
                 <button className="top-res" onClick={() => { 
                     const filteredList = listOfRes.filter((res) => (res.info.avgRating > 4.2));
-                    setListOfRes(filteredList);
+                    setFilteredListOfRes(filteredList);
                 }}>Top Restaurants</button>
             </div>
             </div>

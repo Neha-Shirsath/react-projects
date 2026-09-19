@@ -140,6 +140,7 @@
     background-color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
     font-weight: 500;
+    cursor: pointer;
 }
 
 .top-res:hover{
@@ -250,6 +251,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
     font-weight: 500;
     color: #2c2b2b;
+    cursor: pointer;
 }
 
 .search-container{
