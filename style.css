@@ -32,6 +32,11 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'sans-serif';
     font-weight: 600;
     cursor:pointer;
+    text-decoration: none;
+}
+
+.items > ul >  Link{
+    text-decoration: none;
 }
 
 .logo-container > .name{

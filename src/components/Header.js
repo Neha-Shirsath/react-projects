@@ -1,5 +1,6 @@
 import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Appheader = () => {
 
@@ -14,10 +15,13 @@ const Appheader = () => {
             </div>
             <div className="items">
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li className="cart-logo">🛒Cart</li>
+                    <li><Link to="/">Home</Link></li>
+                    
+                    <li><Link to="/about">About Us</Link></li>
+
+                    <li><Link to="/contact">Contact Us</Link></li>
+
+                    <li><Link className="cart-logo">🛒Cart</Link></li>
                     <li><button className="login-btn" 
                         onClick = { () => {
                             loginBtn === "Login" 
