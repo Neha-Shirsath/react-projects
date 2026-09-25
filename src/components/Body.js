@@ -27,7 +27,7 @@ const Appbody = () => {
     
    };
 
-    return listOfRes.length === 0 ? (<Shimmer/>) : (
+    return listOfRes?.length === 0 ? (<Shimmer/>) : (
         <div className="app-body">
             <div className="searching">
                 <div className="search-container">
